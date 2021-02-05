@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+}
+
+#form_users_input{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#form_users_input *{
+    margin: 1em auto 0 auto;
+}
