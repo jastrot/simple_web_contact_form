@@ -11,13 +11,13 @@
 </head>
 <body>
 
-    <form action="" method="post" id="form_input">    
-        <input type="text" name="first_name" id="first_name_input">
-        <input type="text" name="last_name" id="last_name_input">
-        <input type="email" name="email" id="email_input">
-        <input type="tel" name="phone_number" id="phone_number_input">
-        <input type="number" name="phone_extension" id="phone_extension_input">
-        <button type="submit">SUBMIT</button>
+    <form action="" method="post" id="form_users_input">    
+        <input type="text" name="first_name" id="first_name_input" alt="Input box requesting your first name." placeholder="Enter first name">
+        <input type="text" name="last_name" id="last_name_input" alt="Input box requesting your last name." placeholder="Enter last name">
+        <input type="email" name="email" id="email_input" alt="Input box requesting your email address." placeholder="Enter email address">
+        <input type="tel" name="phone_number" id="phone_number_input" alt="Input box requesting your phone number to be entered with no dashes, spaces, or parenthesis" placeholder="Enter telephone number">
+        <input type="number" name="phone_extension" id="phone_extension_input" alt="Enter Phone Number Extension, if applicable." placeholder="Enter extension, if applicable">
+        <button type="submit" alt="Button that will send info to webserver">SUBMIT</button>
     </form>
 
 </body>
