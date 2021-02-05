@@ -52,3 +52,18 @@ Create database and table with columns
 			UserID	  	[int(11), fk, not null, On Update-Cascade, On Delete-Restrict]
 			ClassificationID[int(11), fk, not null, On Update-Cascade, On Delete-Restrict]
 			Comment		[text, null]
+
+===========================================================================================================
+
+Technologies Used:
+	Windows 10 Home
+	Microsoft Notepad
+	Microsoft Visual Studio Code
+	XAMPP v3.2.4
+		MySQL (MariaDB variant)
+		Apache
+		PHP 
+	Github Desktop
+	Git
+	
+	
