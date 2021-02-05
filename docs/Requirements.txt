@@ -1,0 +1,54 @@
+Input fields
+	User's Name
+	User's Email address
+	Dropdown with 4 list items
+	text area for comment
+
+Submit Button
+	posts input fields to second page
+	displays info on second page
+	maybe write to database too
+
+Edit button
+	available only on second page
+	reads data on screen and goes back to page 1 for editing with fields filled in
+	saves data back to database
+
+=================================================================================================
+Create MYSQL User for authenticating
+	User:		dev_projects
+	Password:	rPvEItDr9VQL3m6K
+	Grant all privileges on wildcard name dev_projects\_%
+	Grant All Global Data Privileges on dev_projects\_%
+	Grant All Global Structure Privileges on dev_projects\_%
+	Grant access to devprojects database
+	Grant All Data Privileges on devprojects
+	Grant All Structure Privilees on devprojects
+
+Create database and table with columns
+	Prompting user for:
+		first name
+		last name
+		email address
+		issue dropdown
+		comment
+	Database Name:	DevProjects	[latin1_swedish_ci]
+
+	Table Name:	simplesebsontactform_users	[InnoDB]
+	Columns:	UserID		[int(11), pk, not null, auto-increment]
+			FirstName 	[Char(20), not null]
+			LastName  	[Char(50), not null]
+			Email	  	[varchar(100), not null]
+			Phone		[int(10), null]
+			Extension	[int(10), null]
+			Created		[datetime, null, default to CURRENT_TIMESTAMP]
+
+	Table Name:	simplewebcontactform_classifications	[InnoDB]
+	Columns:	ClassificationID[int(11), pk, not null, auto-increment]
+			Classification	[varchar(30), not null]
+
+	Table Name:	simplewebcontactform_issues
+	Columns:	IssueID 	[int(11), pk, not null, auto-increment]
+			UserID	  	[int(11), fk, not null, On Update-Cascade, On Delete-Restrict]
+			ClassificationID[int(11), fk, not null, On Update-Cascade, On Delete-Restrict]
+			Comment		[text, null]
